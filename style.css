@@ -1,0 +1,333 @@
+:root {
+    --dark-color : #361612;
+    --primary-color: #A94438;
+    --secondary-color : #D24545;
+    --third-color : #E6BAA3;
+    --light--color : #E4DEBE;
+    --text-dark: #18181b;
+    --text-light: #71717a;
+    --white: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS untuk navigasi */
+.navbar {
+    background-color: var(--primary-color);
+    font-size: 1.2rem; /* Warna latar belakang navigasi dengan transparansi */
+    padding: 20px 0;
+    width: 100%; /* Lebar penuh */
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark);
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.header {
+    background-image: url('assets/bg-header.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Mengatur tinggi header sebagai 100% tinggi viewport */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-content {
+  text-align: left; /* Arahkan teks ke kiri */
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: var(--light--color);
+}
+.navbar-non-transparent {
+    background-color: var(--white); /* Warna latar belakang navigasi yang solid */
+}
+
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+#about {
+    min-height: 100vh;
+    margin-top: 50px; /* Menambahkan margin atas */
+    padding: 100px 20px 30px;
+}
+
+.jumbotron-fluid {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+#product {
+    min-height: 100vh;
+    background-color: var(--third-color);
+    margin-top: 50px; /* Menambahkan margin atas */
+    padding: 100px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    height: 250px;
+    object-fit: cover;
+}
+
+#contact {
+    min-height: 100vh;
+    color: var(--white);
+    margin-top: 50px; /* Menambahkan margin atas */
+    padding: 100px 20px 30px;
+}
+
+.footer {
+    background-color: var(--dark-color);
+  }
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .footer__col h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .footer__col p {
+    margin-bottom: 1rem;
+    color: var(--white);
+  }
+  
+  .footer__col a {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--white);
+    transition: 0.3s;
+  }
+  
+  .footer__col a span {
+    margin-right: 5px;
+  }
+  
+  .footer__col a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer__socials span {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .footer__bar {
+    padding: 1rem;
+    background-color: #25100d;
+    font-size: 0.9rem;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .section__container {
+    max-width: var(--max-width);
+    padding: 5rem 1rem;
+    margin: auto;
+  }
+
+  .container-filter {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container-filter li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .container-filter a {
+    display: block;
+    font-size: 14px;
+    margin: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 30px;
+    -webkit-transition: all 0.6s;
+    border-bottom: 1px solid transparent;
+    color: var(--text-light) !important;
+  }
+  
+  .container-filter a:hover {
+    color: #222222 !important;
+  }
+  
+  .container-filter a.active {
+    color: #222222 !important;
+    border-bottom: 1px solid #222222;
+  }
+
+  .onfood{
+    background-color: #944a42;
+  }
+  
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+  .item-box {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .item-box a {
+    display: inline-block;
+  }
+  
+  .item-box .item-mask {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.432);
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .item-box .item-mask .item-caption {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    opacity: 0;
+  }
+  
+  .item-box:hover .item-mask {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer !important;
+  }
+  
+  .item-box:hover .item-caption {
+    opacity: 1;
+  }
+  
+  .item-box:hover .item-container {
+    width: 100%;
+  }
+  
+  .services-box {
+    padding: 45px 25px 45px 25px;
+  }
+
+
+  @media (max-width: 767px) {
+    .header h1 {
+      font-size: 2.5rem;
+    }
+    .header p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-nav .nav-link {
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .footer__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .footer__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .navbar-nav {
+      margin-top: 10px; /* Adjust as needed */
+    }
+    .navbar-nav .nav-link {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      background-color: var(--primary-color); /* Background color of collapsed navbar */
+      border-top: 1px solid var(--white); /* Optional: Add border between toggle button and navbar */
+    }
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+    .navbar-nav .nav-item {
+      display: block;
+      margin-bottom: 10px; /* Adjust as needed */
+    }
+  }
+  
